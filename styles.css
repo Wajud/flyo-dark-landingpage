@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Lato:wght@300&family=Open+Sans:wght@400;700;800&family=Raleway:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Open sans", sans-serif;
+
+}
+
+main{
+    background: url("images/bg-curvy-desktop.svg"); 
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    background-position: 0% 20%;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.btn{
+    width: 200px;
+    text-align: center;
+    padding: 12px 0;
+    color: #fff;
+    background-color:  hsl(198, 69%, 75%);
+    border-radius: 20px;
+    font-weight: 700;
+    border: 0;
+    outline: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color:  rgba(147, 209, 235, 0.8);
+}
+
+.flex{
+    display: flex;
+}
+
+.my-1{
+    margin: 1.5rem 0;
+}
+
+h1{
+    font-family: "Raleway", sans-serif;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+header{
+    width: 100%;
+    background-color: hsl(219, 30%, 18%);
+    padding: 30px 0 60px;
+}
+
+section.header{
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    align-items: center;
+
+}
+
+header img{
+    grid-column: 1/2;
+    width: 100px;
+    object-fit: cover;
+}
+
+header nav{
+    grid-column: 3/4;
+}
+
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+header li:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+}
+
+section.first{
+    width: 100%;
+    background: url("images/bg-curvy-desktop.svg") hsl(219, 30%, 18%) no-repeat;
+    background-size: 100%;
+    background-position: 0% 100%;
+    margin: -10px 0;
+
+}
+
+section.first-wrap{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+}
+
+section.features{
+    width: 100%;
+    background-color:  hsl(218, 28%, 13%);
+    padding: 150px 0;
+    margin: -10px 0;
+}
+
+div.features-wrap{
+    width: 70%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 5rem;
+    row-gap: 3rem;
+
+}
+
+section.productive {
+    background-color:hsl(218, 28%, 13%) ;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+div.productive-wrap{
+    width: 80%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+
+section.productive img{
+    
+    width: 400px;
+    justify-self: center;
+}
+
+section.productive p.how-fylo-works{
+    width: 170px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+p.how-fylo-works:hover{
+    cursor: pointer;
+}
+section.productive p span img{
+    width: 10px;
+}
+
+section.testimonials{
+    width: 100%;
+    background-color: hsl(218, 28%, 13%);
+    padding: 70px 0 250px;
+    margin: -10px 0;
+}
+div.testimonials-wrap{
+    width: 90%;
+    margin: 0px auto ;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+div.testimonials-wrap > div.card {
+    background-color: hsl(219, 30%, 18%);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+section.testimonials img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+div.testimonials-wrap > div.card div{
+    margin-top: 10px;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+p.name{
+    font-weight: bold;
+}
+
+section.form{
+    width: 70%;
+    position: absolute;
+    bottom: -8em;
+    transform: translateX(20%);
+    background-color: hsl(219, 30%, 18%);
+    text-align: center;
+    padding: 30px 60px;
+
+}
+
+form{
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+div.email-wrap{
+    width: 70%;
+}
+
+div.email-wrap p{
+    margin: 15px 0px 0 40px;
+    color: rgb(236, 120, 120);
+}
+
+input{
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 25px;
+    border: 0px;
+    outline: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+div.email-wrap + .btn{
+    height: 52px;
+}
+
+section.footer{
+    width: 100%;
+    margin: 0px auto;
+    background-color: hsl(216, 53%, 9%);
+    padding-top: 150px;
+
+}
+
+div.footer-wrap{
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+div.footer-wrap > img{
+    width: 100px;
+}
+
+footer{
+    margin-top: 30px;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+footer p{
+    cursor: pointer;
+}
+
+footer p:hover{
+    color: #ccc;
+}
+
+footer > div{
+    width: 20%;
+    justify-self: center;
+}
+
+footer img{
+    width: 20px;
+    object-fit: contain;
+    color:#fff;
+
+}
+
+footer.flex .flex{
+    gap: 1rem;
+}
+
+.location {
+    width: 50%;
+    gap: 1rem;
+}
+
+.location img{
+    align-self: flex-start;
+    padding-top: 5px;
+}
+
+div.contact{
+    width: 25%;
+    flex-direction: column;
+}
+
+div.contact-us{
+    width: 25%;
+}
+
+.phone.flex, .email.flex{
+    gap: 5rem;
+}
+
+div.about > p, .contact-us > p{
+    margin-bottom: 10px;
+}
+
+
+.socials {
+    align-items: flex-start;
+}
+
+@media (max-width: 800px){
+    .flex{
+        flex-direction: column;
+    }
+
+    section.header{
+        grid-template-columns: 0.4fr 0.4fr 4fr;
+    }
+
+
+    section.first img{
+        max-width: 100%;
+    }
+
+    div.features-wrap{
+        grid-template-columns: 1fr;
+
+    }
+
+    div.features-wrap .card{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    div.productive-wrap{
+        grid-template-columns: 1fr;
+        place-items: center;
+
+    }
+
+    div.productive-wrap img{
+        width: 100%;
+    }
+
+    div.testimonials-wrap{
+        flex-direction: column;
+        
+    }
+
+    div.testimonials-wrap .card{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section.form{
+        width: 90%;
+        left: -13%;
+    }
+
+    div.email-wrap p{
+        margin: 8px 0px 0 20px;
+    
+    }
+
+    .form .flex, .location.flex, 
+    .email.flex, .phone.flex,
+    .socials.flex{
+        flex-direction: row;
+    }
+
+    div.footer-wrap > img {
+        width: 180px;
+    }
+
+    .socials.flex{
+        margin: 0 auto;
+    }
+    
+    
+    section.form{
+        bottom: -12em;
+    }
+    
+
+    section.form > h1, section.form > p{
+        text-align: left;
+    }
+    div.form .flex{
+        flex-direction: column;
+    }
+
+    div.form .flex > *{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    input{
+        padding: 12px;
+    }
+
+    section.testimonials{
+        padding-bottom: 355px;
+    }
+
+    section.footer{
+        padding-top: 250px;
+    }
+    
+    section.footer p{
+        width: 100%;
+    }
+
+    .location, div.contact{
+        width: 90%;
+    }
+}
+
+p.email-error{
+    text-align: left;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
